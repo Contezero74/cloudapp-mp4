@@ -96,7 +96,7 @@ public class SuperTable {
 	final ResultScanner scanner = herosScanTable.getScanner(herosScan);
 
 	// Read values from scan result and print scan result
-	for (Result hero = scanner.next(); hero != null; hero = scanner.next()) {
+	for (Result hero : scanner) {
 		System.out.println(hero);
 	}
 
